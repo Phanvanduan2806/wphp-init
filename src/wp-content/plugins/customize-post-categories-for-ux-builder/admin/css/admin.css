@@ -1,0 +1,23 @@
+.form-import-post-category {
+    padding: 20px 0px;
+    padding: 20px 0px;
+    margin-top: 10px;
+    border: 1px dashed;
+    display: none;
+}
+
+#frm-import-post-category {
+    padding: 0px 10px;
+}
+
+.post-category-uxb-select-option {
+    margin: 0px 0px 15px 0px;
+}
+
+input.post-uxb-type-template {
+    display: none;
+}
+
+post-cat-uxb-thumbnail-wrap {
+    margin: 10px 0px;
+}

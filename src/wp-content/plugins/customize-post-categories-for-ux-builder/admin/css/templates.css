@@ -1,0 +1,50 @@
+div#screen-options-link-wrap,
+div#wpseo_meta,
+#welcome-panel,
+a.wpb_switch-to-gutenberg,
+a.wpb_switch-to-front-composer,
+button#show-settings-link,
+#minor-publishing,
+.vc_pull-right.vc_save-backend,
+.vc_pull-right_,
+#wpb-edit-inline,
+#notice,
+.error,
+#error,
+.notice.notice-error,
+#setting-error-tgmpa,
+div#message,
+.wp-core-ui .notice.is-dismissible,
+.updated,
+.update-nag,
+.update-nag.inline,
+div#vc_license-activation-notice,
+div#icl_div_config,
+.otgs-notice{
+  display: none !important;
+}
+
+.post-category-uxb-delete-template{
+  background-color: #C00 !important;
+  border: 1px solid #C00 !important;
+  color: #fff !important;
+}
+
+.post-category-uxb-default-template{
+  margin-bottom: 15px !important;
+}
+
+.post-category-uxb-delete-template:hover {
+  background-color: #ec4141 !important;
+}
+.post-category-uxb-default-template{
+  float:right;
+}
+
+.nav-tab:first-child {
+  margin-left: 0px;
+}
+
+.archive-template-action{
+  display: none;
+}

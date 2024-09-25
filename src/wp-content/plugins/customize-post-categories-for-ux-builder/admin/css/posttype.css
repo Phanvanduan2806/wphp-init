@@ -1,0 +1,28 @@
+#pyre_post_options,
+div#edit-slug-box,
+#delete-action,
+a#fusion_toggle_front_end,
+#minor-publishing,
+#setting-error-tgmpa,
+.notice.notice-warning,
+.notice.notice-error,
+.error,
+#error,
+.update-nag,
+.update-nag.inline,
+#wpseo_meta,
+div#icl_div_config,
+.yoast,
+.wpseo-metabox{
+    display: none !important;
+}
+
+li.fusion-builder-option.textfield[data-option-id="per_page"] .option-details {
+    width: 100%;
+}
+li.fusion-builder-option.textfield[data-option-id="per_page"] .option-field.fusion-builder-option-container {
+    display: none;
+}
+li.fusion-builder-option.textfield[data-option-id="per_page"] .option-field.fusion-builder-option-container input#per_page{
+    pointer-events: none;
+}

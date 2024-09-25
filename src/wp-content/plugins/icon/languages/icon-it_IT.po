@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icon\n"
+"POT-Creation-Date: 2022-02-03 10:36+0700\n"
+"PO-Revision-Date: 2022-02-03 10:36+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: icon.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/admin/functions/icon-functions.php:188
+#, php-format
+msgid "Welcome to %s"
+msgstr "Benvenuto su %s"
+
+#: inc/admin/functions/icon-functions.php:189
+#, php-format
+msgid ""
+"Thank you for installing this plugin. %s is ready to make your sites more "
+"stunning and more elegant!"
+msgstr ""
+"Grazie per l'installazione di questo plugin. %s è pronto per rendere i siti "
+"più stupefacente e più elegante!"
+
+#: inc/admin/functions/icon-functions.php:193
+msgid ""
+"Several plugins below is free and you can install it and hopefully useful. "
+"Enjoy it!"
+msgstr ""
+"Diversi plugin qui sotto è gratuito ed è possibile installarlo e speriamo "
+"utile. Buon divertimento!"
+
+#: inc/admin/functions/icon-functions.php:549
+#, php-format
+msgid "By %s"
+msgstr "Da %s"
+
+#: inc/admin/functions/icon-functions.php:562
+#, php-format
+msgid "Install %s now"
+msgstr "Installare %s ora"
+
+#: inc/admin/functions/icon-functions.php:562
+msgid "Install Now"
+msgstr "Installa Ora"
+
+#: inc/admin/functions/icon-functions.php:570
+#, php-format
+msgid "Update %s now"
+msgstr "Aggiornare %s ora"
+
+#: inc/admin/functions/icon-functions.php:570
+msgid "Update Now"
+msgstr "Aggiorna ora"
+
+#: inc/admin/functions/icon-functions.php:576
+msgid "This plugin is already installed and is up to date"
+msgstr "Questo plugin è già installato ed è fino ad oggi"
+
+#: inc/admin/functions/icon-functions.php:576
+msgctxt "plugin"
+msgid "Installed"
+msgstr "Installato"
+
+#: inc/admin/functions/icon-functions.php:586
+#, php-format
+msgid "More information about %s"
+msgstr "Maggiori informazioni su %s"
+
+#: inc/admin/functions/icon-functions.php:586
+msgid "More Details"
+msgstr "Maggiori dettagli"
+
+#: inc/admin/functions/icon-functions.php:661
+msgid "Last Updated:"
+msgstr "Ultimo aggiornamento:"
+
+#: inc/admin/functions/icon-functions.php:662
+#, php-format
+msgid "%s ago"
+msgstr "%s fà"
+
+#: inc/admin/functions/icon-functions.php:666
+#, php-format
+msgid "%s download"
+msgid_plural "%s downloads"
+msgstr[0] "%s download"
+msgstr[1] "%s downloads"
+
+#: inc/admin/functions/icon-functions.php:672
+msgid "Untested with your version of WordPress"
+msgstr "Non testato con la tua versione di WordPress"
+
+#: inc/admin/functions/icon-functions.php:674
+msgid "<strong>Incompatible</strong> with your version of WordPress"
+msgstr "<strong>Incompatibile</strong> con la versione di WordPress"
+
+#: inc/admin/functions/icon-functions.php:676
+msgid "<strong>Compatible</strong> with your version of WordPress"
+msgstr "<strong>Compatibile</strong> con la versione di Wordpress"
+
+#: inc/admin/iconpicker.php:15
+#, fuzzy
+#| msgid "Icon"
+msgid "Add Icon"
+msgstr "Icon"
+
+#. Plugin Name of the plugin/theme
+msgid "Icon"
+msgstr "Icon"
+
+#. Plugin URI of the plugin/theme
+msgid "http://ghozylab.com/plugins/"
+msgstr "http://ghozylab.com/plugins/"
+
+#. Description of the plugin/theme
+msgid ""
+"Icon - Display icon anywhere you like. You can quickly customize any icons "
+"to look exactly the way you want them to look."
+msgstr ""
+"Icona - Icona schermo ovunque che ti piace. È possibile personalizzare "
+"rapidamente le icone per l'aspetto che vuoi li a guardare."
+
+#. Author of the plugin/theme
+msgid "GhozyLab, Inc."
+msgstr "GhozyLab, Inc."
+
+#. Author URI of the plugin/theme
+msgid "https://ghozylab.com/"
+msgstr "https://ghozylab.com/"

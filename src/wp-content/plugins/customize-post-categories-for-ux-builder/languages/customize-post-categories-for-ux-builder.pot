@@ -1,0 +1,536 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-08-14 14:44+0700\n"
+"PO-Revision-Date: 2022-08-14 14:45+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr;esc_attr__;esc_html;esc_html__;_x;"
+"_n\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:57
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:58
+#: admin/partials/templates.php:4
+msgid "Archive Templates"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:92
+msgid "Template Attributes"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:152
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:155
+msgid "Template updated."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:153
+msgid "Custom field updated."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:154
+msgid "Custom field deleted."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:156
+msgid "Template restored to revision."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:157
+msgid "Template published."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:158
+msgid "Template saved."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:159
+msgid "Template submitted."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:160
+msgid "Template scheduled"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:161
+msgid "Template draft updated."
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:194
+msgid "Archive Title"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:195
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:254
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:314
+msgid "Post Archive"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:203
+#: includes/class-customize-post-categories-for-ux-builder-function.php:767
+msgid "Layout"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:207
+#: includes/class-customize-post-categories-for-ux-builder-function.php:755
+#: includes/class-customize-post-categories-for-ux-builder-function.php:759
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1003
+msgid "Style"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:217
+msgid " Background color"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:226
+msgid "Show Title"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:235
+msgid "Show Breadcrumbs"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:253
+msgid "Description"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:260
+msgid "Typography"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:264
+#: includes/class-customize-post-categories-for-ux-builder-function.php:797
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1140
+msgid "Width"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:273
+msgid "Font size"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:282
+msgid "Line height"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:290
+msgid "Text align"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:297
+msgid "Text color"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:313
+msgid "Archive posts"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:361
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:381
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:403
+#: includes/class-customize-post-categories-for-ux-builder-function.php:111
+msgid "Nonce is invalid"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:367
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:389
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:409
+msgid "successfully"
+msgstr ""
+
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:369
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:371
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:373
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:391
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:393
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:395
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:411
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:413
+#: admin/class-customize-post-categories-for-ux-builder-admin.php:415
+msgid "error"
+msgstr ""
+
+#: admin/partials/metabox.php:5
+msgid "Template"
+msgstr ""
+
+#: admin/partials/metabox.php:10
+msgid "Select a template"
+msgstr ""
+
+#: admin/partials/metabox.php:12 admin/partials/templates.php:14
+msgid "Default Template"
+msgstr ""
+
+#: admin/partials/metabox.php:14
+msgid "Template has been activated"
+msgstr ""
+
+#: admin/partials/templates.php:12
+msgid "Add New"
+msgstr ""
+
+#: admin/partials/templates.php:25
+#: includes/class-customize-post-categories-for-ux-builder-function.php:25
+msgid "Add New Template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:25
+#: includes/class-customize-post-categories-for-ux-builder-function.php:32
+msgid "Edit Template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:27
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1341
+msgid "Posts Categories Templates"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:28
+msgid "Categories Templates"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:31
+msgid "New Template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:81
+msgid ""
+"To edit template content with UX Builder, You need to publish the template "
+"first."
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:82
+msgid "Activating..."
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:83
+msgid "Duplicating..."
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:84
+msgid "Deleting..."
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:85
+msgid "Are you sure?"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:86
+msgid "Are you sure will delete this template?"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:303
+msgid "Default"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:304
+msgid "Full Width"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:305
+msgid "Full Width - Transparent Header"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:306
+msgid "Full Width - Transparent Header - Light Text"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:307
+msgid "Full Width - Header on Scroll"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:308
+msgid "Left Sidebar"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:309
+msgid "Right Sidebar"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:455
+msgid "Import All Template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:455
+#: includes/class-customize-post-categories-for-ux-builder-function.php:460
+msgid "Import Template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:456
+msgid "Export All Template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:456
+msgid "Export Template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:480
+#: includes/class-customize-post-categories-for-ux-builder-function.php:508
+msgid "Edit this template"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:482
+#: includes/class-customize-post-categories-for-ux-builder-function.php:512
+msgid "Active"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:484
+#: includes/class-customize-post-categories-for-ux-builder-function.php:513
+msgid "Duplicate"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:514
+msgid "Delete"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:725
+msgid "Advanced"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:729
+msgid "Class"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:735
+msgid "Visibility"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:738
+msgid "Visible"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:739
+msgid "Hidden"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:740
+msgid "Only for Desktop"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:741
+msgid "Only for Mobile"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:742
+msgid "Only for Tablet"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:743
+msgid "Hide for Desktop"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:744
+msgid "Hide for Mobile"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:771
+msgid "Type"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:783
+msgid "Grid Layout"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:790
+msgid "Grid Height"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:807
+msgid "Column Spacing"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:820
+msgid "Columns"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:829
+msgid "Depth"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:836
+msgid "Depth Hover"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:843
+msgid "Animate"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:851
+msgid "Slider"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:856
+msgid "Nav Style"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:862
+msgid "Nav Color"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:871
+msgid "Nav Position"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:881
+msgid "Bullets"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:890
+msgid "Auto Slide"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:904
+msgid "Infinitive"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:915
+msgid "Posts"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:919
+msgid "Show pagination"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:929
+msgid "Total Posts"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:935
+msgid "Offset"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:941
+msgid "Order by"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:948
+msgid "Order"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:959
+msgid "Title"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:963
+msgid "Title Size"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:969
+msgid "Title Style"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:980
+msgid "Read More"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:984
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1216
+msgid "Text"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:989
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1293
+msgid "Color"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1019
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1166
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1247
+msgid "Size"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1027
+msgid "Meta"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1031
+msgid "Date"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1041
+msgid "Badge Style"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1054
+msgid "Excerpt"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1066
+msgid "Excerpt Length"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1073
+msgid "Category"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1083
+msgid "Comments"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1096
+msgid "Image"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1100
+msgid "Height"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1103
+msgid "Auto"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1153
+msgid "Radius"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1179
+msgid "Overlay"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1192
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1264
+msgid "Hover"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1202
+msgid "Hover Alt"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1220
+msgid "Position"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1236
+msgid "Align"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1280
+msgid "Bg Color"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1303
+msgid "Padding"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1326
+msgid "All posts categories templates"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1330
+msgid "All posts tags templates"
+msgstr ""
+
+#: includes/class-customize-post-categories-for-ux-builder-function.php:1346
+msgid "Posts Tags templates"
+msgstr ""
+
+#: public/partials/archive-post.php:71
+#, php-format
+msgid "%s Comment"
+msgstr ""

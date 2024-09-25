@@ -1,0 +1,49 @@
+.button-reload span {
+    min-height: 30px;
+    line-height: 30px;
+}
+
+#wp-site-manager-table .loading {
+    width: 1.4em;
+    vertical-align: middle;
+}
+
+#wp-site-manager-table div.dt-container select.dt-input {
+    padding-right: 24px;
+}
+
+#wp-site-manager-table .col-action,
+#wp-site-manager-table .col-type,
+#wp-site-manager-table .col-updated,
+#wp-site-manager-table .col-author {
+    text-align: center;
+}
+
+#wp-site-manager-table .col-version,
+#wp-site-manager-table .col-size {
+    text-align: right;
+}
+
+#wp-site-manager-table .col-action .spinner {
+    float: none;
+}
+
+#wp-site-manager-table a {
+    text-decoration: none;
+}
+
+#wp-site-manager-table .button .dashicons {
+    vertical-align: text-top;
+}
+
+#wp-site-manager-table .button-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+#wp-site-manager-table .button-success {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}

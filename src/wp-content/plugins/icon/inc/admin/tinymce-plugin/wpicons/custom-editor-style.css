@@ -1,0 +1,21 @@
+/* CSS Document */
+
+.iconsc {
+    display: inline-block !important;
+    /*background: #fefefe url("images/icon-picker.png") no-repeat scroll center center;*/
+    width: 20px !important;
+    height: 20px !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    outline: none !important;
+    /* -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none; */
+}
+
+.no_image_resize .mce-resizehandle,
+.no_image_resize .mce-inline-toolbar-grp {
+    display: none !important;
+}

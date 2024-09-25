@@ -1,0 +1,19 @@
+ul.post-cat-uxb-pagination {
+    margin: 15px 0px 25px 0px !important;
+}
+
+.archive-header-default .page-title-inner {
+    padding-bottom: 20px;
+}
+
+.archive-header-featured.featured-title {
+    background-color: var(--tooltip-bg-color) !important;
+}
+
+.archive-uxb-hidden {
+    display: none;
+}
+
+a.plain.post-archie-uxb-link-title {
+    display: block !important;
+}
