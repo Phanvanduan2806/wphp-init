@@ -5,9 +5,8 @@ git clone https://TOKEN@github.com/webangiang/wp-init DOMAIN
 ```
 
 # Kho theme
-```
-// todo
-```
+http://duan.wuaze.com
+
 # Thông tin account
 ```
 PassFE: P@ssw0rd@@
