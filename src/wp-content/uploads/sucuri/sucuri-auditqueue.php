@@ -302,3 +302,7 @@ exit(0);
 1727307319_5771:"Notice: code, 192.168.65.1; Page status has been changed; details: ID: 467,Old status: new,New status: auto-draft,Title: L\u01b0u b\u1ea3n nh\u00e1p t\u1ef1 \u0111\u1ed9ng"
 1727307663_9:"Notice: code, 192.168.65.1; Rm_content_editor status has been changed; details: ID: 468,Old status: new,New status: draft,Title: "
 1727307722_2656:"Warning: code, 192.168.65.1; User account edited; ID: 4; name: seo; old_name: seo; email: seo@domain.com; old_email: seo@domain.com; roles: administrator; old_roles: administrator"
+1727320205_795:"Notice: code, 192.168.65.1; Blocks status has been changed; details: ID: 469,Old status: new,New status: auto-draft,Title: L\u01b0u b\u1ea3n nh\u00e1p t\u1ef1 \u0111\u1ed9ng"
+1727320225_8003:"Notice: code, 192.168.65.1; Blocks status has been changed; details: ID: 470,Old status: new,New status: auto-draft,Title: L\u01b0u b\u1ea3n nh\u00e1p t\u1ef1 \u0111\u1ed9ng"
+1727320226_0493:"Notice: code, 192.168.65.1; Blocks status has been changed; details: ID: 471,Old status: new,New status: auto-draft,Title: L\u01b0u b\u1ea3n nh\u00e1p t\u1ef1 \u0111\u1ed9ng"
+1727320306_8457:"Notice: code, 192.168.65.1; Blocks status has been changed; details: ID: 472,Old status: new,New status: auto-draft,Title: L\u01b0u b\u1ea3n nh\u00e1p t\u1ef1 \u0111\u1ed9ng"
