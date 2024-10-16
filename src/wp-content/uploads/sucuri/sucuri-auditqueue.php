@@ -307,3 +307,5 @@ exit(0);
 1727320226_0493:"Notice: code, 192.168.65.1; Blocks status has been changed; details: ID: 471,Old status: new,New status: auto-draft,Title: L\u01b0u b\u1ea3n nh\u00e1p t\u1ef1 \u0111\u1ed9ng"
 1727320306_8457:"Notice: code, 192.168.65.1; Blocks status has been changed; details: ID: 472,Old status: new,New status: auto-draft,Title: L\u01b0u b\u1ea3n nh\u00e1p t\u1ef1 \u0111\u1ed9ng"
 1727326001:"Notice: 192.168.65.1; User authentication succeeded: code"
+1729054646_9425:"Notice: 192.168.65.1; User authentication succeeded: code"
+1729054728_3366:"Error: code, 192.168.65.1; Reading settings changed: (multiple entries): blog_public: from '1' to '0'"

@@ -9,3 +9,5 @@ require_once 'scrolling_box.php';
 require_once 'canonical.php';
 
 require_once '301.php';
+require_once 'secure-rest-users.php';
+require_once 'robots_txt.php';

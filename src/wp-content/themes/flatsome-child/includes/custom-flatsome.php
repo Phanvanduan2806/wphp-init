@@ -11,7 +11,7 @@ class custom_flatsome {
         
         add_action('admin_head', array($this, 'customCssBackend'));
         
-        define('WP_AUTO_UPDATE_CORE', false);
+//        define('WP_AUTO_UPDATE_CORE', false);
         add_filter('pre_site_transient_update_core', array($this, 'removeCoreUpdates'));
         add_filter('pre_site_transient_update_plugins', array($this, 'removeCoreUpdates'));
         add_filter('pre_site_transient_update_themes', array($this, 'removeCoreUpdates'));
