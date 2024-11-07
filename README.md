@@ -12,7 +12,7 @@ http://duan.wuaze.com
 PassFE: P@ssw0rd@@
 Link dashboard: https://domain/web_auth
 User: seo
-Pass: @BAJz8568Hii0o^k9gFz6umY
+Pass: &nXJuz2HTd3j1ZHztihU3kPV
 ```
 
 # Security
