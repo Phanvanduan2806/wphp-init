@@ -99,12 +99,21 @@ function render_custom_import_page() {
                     echo "Added page: $value<br>";
                     break;
                 case 'post':
-                    wp_insert_post([
-                        'post_title' => $value,
-                        'post_type' => 'post',
+                    list($post_title, $thumbnail_url) = explode(",", $value, 2);
+                    $post_title = trim($post_title);
+                    $thumbnail_url = trim($thumbnail_url);
+                    $post_id = wp_insert_post([
+                        'post_title'  => $post_title,
+                        'post_type'   => 'post',
                         'post_status' => 'publish'
                     ]);
-                    echo "Added post: $value<br>";
+                    if ($post_id && !is_wp_error($post_id)) {
+                        $thumbnail_id = import_image($thumbnail_url);
+                        if ($thumbnail_id && !is_wp_error($thumbnail_id)) {
+                            set_post_thumbnail($post_id, $thumbnail_id);
+                        }
+                    }
+                    echo "Added post: $post_title<br>";
                     break;
             }
         }
@@ -123,7 +132,7 @@ function render_custom_import_page() {
                         <label for="result_output">Result Output</label>
                     </th>
                     <td>
-                        <textarea name="result_output" rows="5" cols="50" required></textarea>
+                        <textarea name="result_output" rows="5" style="width: 100%;font-size: smaller" required></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -160,7 +169,7 @@ function import_image($url) {
 
     if (is_wp_error($tmp)) {
         echo "Failed to download image from URL: $url<br>";
-        return;
+        return null;
     }
 
     $file_array = array(
@@ -173,6 +182,8 @@ function import_image($url) {
     if (is_wp_error($id)) {
         @unlink($file_array['tmp_name']);
         echo "Failed to import image from URL: $url<br>";
+        return null;
     }
+    return $id;
 }
 ?>
