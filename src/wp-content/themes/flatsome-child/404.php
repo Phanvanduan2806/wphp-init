@@ -16,7 +16,6 @@ $result = <<<EOF
 [col span="6" span__sm="12" align="center"]
 
 [title style="center" text="Trang không tìm thấy" tag_name="h1" class="a-heading"]
-[ux_image id="525" height="100%"]
 
 [search style="flat"]
 
