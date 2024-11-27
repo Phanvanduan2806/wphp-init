@@ -31,7 +31,7 @@ const posts = Array.from(document.querySelectorAll('article'))
     .filter(i => i.title);
 
 const imgElements = Array.from(document.querySelectorAll('img'))
-    .map(i => i.src)
+    .map(i => i.currentSrc)
     .filter(Boolean);
 
 const backgroundImages = Array.from(document.querySelectorAll('*'))
