@@ -14,6 +14,6 @@ add_action('wp_footer', function () {
     wp_enqueue_script('a-user-js', get_stylesheet_directory_uri() . '/assets/js/a-user.js', [], WP_FLATSOME_ASSET_VERSION);
 });
 
-add_action('admin_enqueue_scripts', function () {
-    wp_enqueue_script('a-admin-js', get_stylesheet_directory_uri() . '/assets/js/a-admin.js', [], WP_FLATSOME_ASSET_VERSION);
-});
+//add_action('admin_enqueue_scripts', function () {
+//    wp_enqueue_script('a-admin-js', get_stylesheet_directory_uri() . '/assets/js/a-admin.js', [], WP_FLATSOME_ASSET_VERSION);
+//});
