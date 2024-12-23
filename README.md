@@ -4,42 +4,51 @@ https://github.com/settings/tokens/new
 git clone https://TOKEN@github.com/webangiang/wp-init DOMAIN
 ```
 
-# Phục dựng site
+# Lấy data từ site wordpress
 ```javascript
-// querySelectorAll cho phù hợp
-const categories = Array.from(document.querySelectorAll('#Layer1 a img'))
-    .map(c => ({title: c?.getAttribute('alt')}))
+const categories = Array.from(document.querySelectorAll('#menu-main a'))
+    .map(c => ({title: c?.innerText.trim()}))
     .filter(i => i.title);
 
-const pages = Array.from(document.querySelectorAll('#menu-footermenu1 li a'))
+const pages = Array.from(document.querySelectorAll('#menu-menu-1 a'))
     .map(p => ({title: p?.innerText.trim()}))
     .filter(i => i.title);
 
-const posts = Array.from(document.querySelectorAll('#two-columns ul li a'))
-    .map(p => ({title: p?.innerText.trim()}))
+const posts = Array.from(document.querySelectorAll('[itemprop="blogPost"]'))
+    .map(p => {
+        const anchor = p.querySelector('.entry-title');
+        const span = p.querySelector('.post-listing-img');
+        const backgroundImage = span ? span.style.backgroundImage : null;
+        const thumbnail = backgroundImage
+            ? backgroundImage.slice(5, -2) 
+            : null;
+
+        return {
+            title: anchor && anchor.getAttribute('title') ? anchor.getAttribute('title').trim() : anchor.innerText.trim(),
+            thumbnail: thumbnail
+        };
+    })
     .filter(i => i.title);
 
 const imgElements = Array.from(document.querySelectorAll('img'))
-    .map(i => i.src)
+    .map(i => i.currentSrc)
     .filter(Boolean);
 
 const backgroundImages = Array.from(document.querySelectorAll('*'))
     .map(e => e.style.backgroundImage?.slice(5, -2) || window.getComputedStyle(e).backgroundImage?.slice(5, -2))
     .filter(Boolean);
 
-const allImages = Array.from(new Set([...imgElements, ...backgroundImages]));
+const allImages = Array.from(new Set([...imgElements, ...backgroundImages]))
+    .filter(src => src && src.startsWith('http'));
 
 const output = [
-    ...allImages.filter(url => url.match(/archive/)).map(url => [`image, ${url}`]),
+    ...allImages.map(url => [`image, ${url}`]),
     ...categories.map(c => [`category, ${c.title}`]),
     ...pages.map(p => [`page, ${p.title}`]),
     ...posts.map(p => [`post, ${p.title}, ${p.thumbnail || null}`])
 ];
 
 console.log(output.map(item => item.join(", ")).join("\n"));
-
-// Sau đó paste vào
-/wp-admin/admin.php?page=custom-import
 ```
 
 # Kho theme

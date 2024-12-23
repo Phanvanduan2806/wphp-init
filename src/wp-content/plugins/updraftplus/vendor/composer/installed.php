@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'updraftplus/updraftplus',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '00d59c409e08a5dd315a537c7b300001e2a5872c',
+        'pretty_version' => 'v1.24.4',
+        'version' => '1.24.4.0',
+        'reference' => '3b05d03a724492fcb03471564a3f2d6ab2b98226',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -353,9 +353,9 @@
             'dev_requirement' => false,
         ),
         'updraftplus/updraftplus' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '00d59c409e08a5dd315a537c7b300001e2a5872c',
+            'pretty_version' => 'v1.24.4',
+            'version' => '1.24.4.0',
+            'reference' => '3b05d03a724492fcb03471564a3f2d6ab2b98226',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -368,6 +368,17 @@
             'type' => 'component',
             'install_path' => __DIR__ . '/../vakata/jstree',
             'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'yahnis-elsts/plugin-update-checker' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '6290e88eebcc367f56180e06d14da5f0a2eb2a1b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../yahnis-elsts/plugin-update-checker',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
             'dev_requirement' => false,
         ),
     ),

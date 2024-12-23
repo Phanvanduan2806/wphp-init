@@ -550,3 +550,6 @@ exit(0);
 1731008214_5202:"Warning: code, 192.168.65.1; User account edited; ID: 4; name: seo; old_name: seo; email: seo@domain.com; old_email: seo@domain.com; roles: administrator; old_roles: administrator"
 1731008550_478:"Warning: code, 192.168.65.1; Plugin deactivated: Copy &amp; Delete Posts (v1.4.9; copy-delete-posts\/copy-delete-posts.php)"
 1731008569_1625:"Warning: code, 192.168.65.1; Plugin deactivated: UpdraftPlus - Backup\/Restore (v1.24.3; updraftplus\/updraftplus.php)"
+1732715500_0941:"Notice: 192.168.65.1; User authentication succeeded: code"
+1732715521_068:"Error: code, 192.168.65.1; Reading settings changed: (multiple entries): blog_public: from '1' to '0'"
+1732715532_3472:"Warning: code, 192.168.65.1; Plugin activated: UpdraftPlus - Backup\/Restore (v2.24.4.26; updraftplus\/updraftplus.php)"
