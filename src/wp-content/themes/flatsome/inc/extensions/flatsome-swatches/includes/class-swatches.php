@@ -178,6 +178,10 @@ final class Swatches {
 	 * Clears all cache.
 	 */
 	public function cache_clear() {
+		if ( ! apply_filters( 'flatsome_swatches_cache_enabled', true ) ) {
+			return;
+		}
+
 		global $wpdb;
 
 		$wpdb->query( "DELETE FROM {$wpdb->options} WHERE `option_name` LIKE ('%\_transient\_flatsome\_swatches%');" );

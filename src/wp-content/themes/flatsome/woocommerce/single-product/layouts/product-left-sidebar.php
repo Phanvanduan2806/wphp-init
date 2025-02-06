@@ -3,7 +3,7 @@
  * Product with left sidebar.
  *
  * @package          Flatsome/WooCommerce/Templates
- * @flatsome-version 3.19.0
+ * @flatsome-version 3.19.9
  */
 
 ?>
@@ -11,7 +11,7 @@
 <div class="product-main">
 <div class="row content-row mb-0">
 
-	<div class="product-gallery col large-<?php echo flatsome_option('product_image_width'); ?>">
+	<div class="product-gallery col large-<?php echo get_theme_mod( 'product_image_width', '6' ); ?>">
 		<?php flatsome_sticky_column_open( 'product_sticky_gallery' ); ?>
 		<?php
 			/**

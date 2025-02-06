@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-14T17:03:33+00:00\n"
-"PO-Revision-Date: 2024-06-14 17:05\n"
+"POT-Creation-Date: 2024-12-16T13:56:13+00:00\n"
+"PO-Revision-Date: 2024-12-16 14:00\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: flatsome\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -819,7 +819,7 @@ msgid "Show catalog ordering"
 msgstr ""
 
 #: inc/admin/options/shop/options-shop-category.php:766
-#: inc/admin/options/shop/options-shop-product-page.php:475
+#: inc/admin/options/shop/options-shop-product-page.php:488
 msgid "Color :selected"
 msgstr "颜色：已选定"
 
@@ -829,27 +829,27 @@ msgstr "颜色：已选定"
 msgid "Custom product layout"
 msgstr "自定义商品布局"
 
-#: inc/admin/options/shop/options-shop-product-page.php:436
+#: inc/admin/options/shop/options-shop-product-page.php:449
 msgid "Layout"
 msgstr "样式"
 
-#: inc/admin/options/shop/options-shop-product-page.php:448
+#: inc/admin/options/shop/options-shop-product-page.php:461
 msgid "Tooltip"
 msgstr "提示"
 
-#: inc/admin/options/shop/options-shop-product-page.php:449
+#: inc/admin/options/shop/options-shop-product-page.php:462
 msgid "Show a tooltip with the term or term description."
 msgstr "显示带有术语或术语描述的图图。"
 
-#: inc/admin/options/shop/options-shop-product-page.php:457
+#: inc/admin/options/shop/options-shop-product-page.php:470
 msgid "Inactive out of stock"
 msgstr "非活动缺货"
 
-#: inc/admin/options/shop/options-shop-product-page.php:458
+#: inc/admin/options/shop/options-shop-product-page.php:471
 msgid "Show out of stock items as inactive."
 msgstr "将缺货商品显示为非在售商品。"
 
-#: inc/admin/options/shop/options-shop-product-page.php:466
+#: inc/admin/options/shop/options-shop-product-page.php:479
 msgid "Disable deselection"
 msgstr ""
 
@@ -941,7 +941,7 @@ msgstr ""
 #: inc/classes/class-flatsome-relay.php:241
 #: inc/classes/class-flatsome-relay.php:289
 #: inc/structure/structure-posts.php:303
-#: woocommerce/loop/pagination.php:46
+#: woocommerce/loop/pagination.php:58
 #: woocommerce/single-product-reviews.php:67
 msgid "Previous"
 msgstr ""
@@ -949,7 +949,7 @@ msgstr ""
 #: inc/classes/class-flatsome-relay.php:246
 #: inc/classes/class-flatsome-relay.php:288
 #: inc/structure/structure-posts.php:302
-#: woocommerce/loop/pagination.php:45
+#: woocommerce/loop/pagination.php:57
 #: woocommerce/single-product-reviews.php:66
 msgid "Next"
 msgstr ""
@@ -1229,13 +1229,13 @@ msgstr "现在注册"
 msgid "Flatsome was unable to receive the latest update"
 msgstr "Flatsome无法接收最新更新"
 
-#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:61
-#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:82
-#: template-parts/header/partials/element-wishlist-mobile.php:20
+#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:73
+#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:96
 #: template-parts/header/partials/element-wishlist-mobile.php:21
-#: template-parts/header/partials/element-wishlist.php:18
-#: template-parts/header/partials/element-wishlist.php:23
+#: template-parts/header/partials/element-wishlist-mobile.php:22
+#: template-parts/header/partials/element-wishlist.php:19
 #: template-parts/header/partials/element-wishlist.php:24
+#: template-parts/header/partials/element-wishlist.php:25
 msgid "Wishlist"
 msgstr "愿望清单"
 
@@ -1637,7 +1637,7 @@ msgstr "视频"
 msgid "Zoom"
 msgstr "缩放"
 
-#: inc/woocommerce/structure-wc-product-page.php:286
+#: inc/woocommerce/structure-wc-product-page.php:307
 msgid "Select options"
 msgstr ""
 

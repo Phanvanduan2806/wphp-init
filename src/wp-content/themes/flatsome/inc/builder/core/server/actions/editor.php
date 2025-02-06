@@ -90,7 +90,7 @@ function ux_builder_editor_data() {
   // Get the back URL. Redirect to admin page if user came
   // from admin or to the post if user came from some other place.
   $back_url = isset( $_SERVER['HTTP_REFERER'] )
-    ? esc_url( $_SERVER['HTTP_REFERER'] )
+    ? esc_url_raw( $_SERVER['HTTP_REFERER'] )
     : $current_post->permalink();
 
   // Go back to admin edit screen if not published.

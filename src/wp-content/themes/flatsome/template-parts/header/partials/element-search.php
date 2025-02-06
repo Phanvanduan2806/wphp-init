@@ -3,15 +3,15 @@
  * Search element.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.16.0
+ * @flatsome-version 3.19.9
  */
 
-$icon_style = get_theme_mod('search_icon_style');
+$icon_style = get_theme_mod( 'search_icon_style', '' );
 ?>
-<?php if(get_theme_mod('header_search_style') !== 'lightbox') { ?>
+<?php if ( get_theme_mod( 'header_search_style', 'dropdown' ) !== 'lightbox' ) { ?>
 <li class="header-search header-search-dropdown has-icon has-dropdown menu-item-has-children">
 	<?php if($icon_style) { ?><div class="header-button"><?php } ?>
-	<a href="#" aria-label="<?php echo __('Search','woocommerce'); ?>" class="<?php echo get_flatsome_icon_class(flatsome_option('search_icon_style'), 'small'); ?>"><?php echo get_flatsome_icon('icon-search'); ?></a>
+	<a href="#" aria-label="<?php echo __('Search','woocommerce'); ?>" class="<?php echo get_flatsome_icon_class( $icon_style, 'small' ); ?>"><?php echo get_flatsome_icon('icon-search'); ?></a>
 	<?php if($icon_style) { ?></div><?php } ?>
 	<ul class="nav-dropdown <?php flatsome_dropdown_classes(); ?>">
 	 	<?php get_template_part('template-parts/header/partials/element-search-form'); ?>

@@ -331,6 +331,19 @@ function flatsome_customizer_shop_product_page_options() {
 		'default'         => 1,
 	) );
 
+	if ( get_option( 'wc_feature_woocommerce_brands_enabled' ) === 'yes' ) {
+		Flatsome_Option::add_field( 'option', array(
+			'type'            => 'checkbox',
+			'settings'        => 'product_brands',
+			'label'           => __( 'Show brand image', 'flatsome-admin' ),
+			'active_callback' => array(
+				$hide_on_custom_product,
+			),
+			'section'         => 'product-page',
+			'default'         => 0,
+		) );
+	}
+
 	Flatsome_Option::add_field( 'option', array(
 		'type'            => 'checkbox',
 		'settings'        => 'product_info_review_count',
@@ -405,7 +418,7 @@ function flatsome_customizer_shop_product_page_options() {
 			$hide_on_gallery_wide,
 			$hide_on_custom_product,
 		),
-		'label'           => __( 'Show Meta / Categories', 'flatsome-admin' ),
+		'label'           => __( 'Show Meta / Categories / Brands', 'flatsome-admin' ),
 		'section'         => 'product-page',
 		'default'         => 1,
 	) );

@@ -3,7 +3,7 @@
  * Mobile wishlist element.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.19.0
+ * @flatsome-version 3.19.7
  */
 
 if ( ! class_exists( 'YITH_WCWL' ) ) {
@@ -12,7 +12,8 @@ if ( ! class_exists( 'YITH_WCWL' ) ) {
 
 $icon       = get_theme_mod( 'wishlist_icon', 'heart' );
 $icon_style = get_theme_mod( 'wishlist_icon_style' );
-$has_items  = YITH_WCWL()->count_products() > 0;
+$count      = function_exists( 'yith_wcwl_wishlists' ) ? yith_wcwl_wishlists()->count_items_in_wishlist() : YITH_WCWL()->count_products();
+$has_items  = $count > 0;
 
 $link_atts = [
 	'href'       => YITH_WCWL()->get_wishlist_url(),
@@ -30,7 +31,7 @@ $icon_atts = [
 		'wishlist-icon',
 		'icon-' . $icon,
 	],
-	'data-icon-label' => $has_items ? YITH_WCWL()->count_products() : null,
+	'data-icon-label' => $has_items ? $count : null,
 ];
 
 ?>

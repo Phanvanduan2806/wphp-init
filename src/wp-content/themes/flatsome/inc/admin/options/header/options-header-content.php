@@ -160,7 +160,7 @@ function flatsome_refresh_header_content_partials( WP_Customize_Manager $wp_cust
 	    'selector' => '.header-block-1',
 	    'settings' => array('header-block-1'),
 	    'render_callback' => function() {
-	  		return do_shortcode('[block id="'.flatsome_option('header-block-1').'"]');
+			return do_shortcode( '[block id="' . get_theme_mod( 'header-block-1' ) . '"]' );
 	    },
 	) );
 
@@ -168,7 +168,7 @@ function flatsome_refresh_header_content_partials( WP_Customize_Manager $wp_cust
 	    'selector' => '.header-block-2',
 	    'settings' => array('header-block-2'),
 	    'render_callback' => function() {
-	  		return do_shortcode('[block id="'.flatsome_option('header-block-2').'"]');
+			return do_shortcode( '[block id="' . get_theme_mod( 'header-block-2' ) . '"]' );
 	    },
 	) );
 

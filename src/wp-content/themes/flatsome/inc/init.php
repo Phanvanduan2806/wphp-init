@@ -42,7 +42,6 @@ require get_template_directory() . '/inc/functions/function-ajax.php';
 require get_template_directory() . '/inc/functions/function-register.php';
 require get_template_directory() . '/inc/functions/function-upgrade.php';
 require get_template_directory() . '/inc/functions/function-update.php';
-require get_template_directory() . '/inc/functions/function-defaults.php';
 require get_template_directory() . '/inc/functions/function-setup.php';
 require get_template_directory() . '/inc/functions/function-theme-mods.php';
 require get_template_directory() . '/inc/functions/function-plugins.php';
@@ -52,6 +51,7 @@ require get_template_directory() . '/inc/functions/function-fallbacks.php';
 require get_template_directory() . '/inc/functions/function-site-health.php';
 require get_template_directory() . '/inc/functions/fl-template-functions.php';
 require get_template_directory() . '/inc/functions/function-fonts.php';
+require get_template_directory() . '/inc/functions/function-deprecated.php';
 
 // Get Presets for Theme Options and Demos
 require get_template_directory() . '/inc/functions/function-presets.php';

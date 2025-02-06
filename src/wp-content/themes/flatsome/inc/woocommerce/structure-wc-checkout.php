@@ -24,7 +24,7 @@ add_action( 'woocommerce_thankyou', 'flatsome_thank_you_html', 100);
 // Add HTML Checkout sidebar
 if(!function_exists('flatsome_html_checkout_sidebar')) {
   function flatsome_html_checkout_sidebar(){
-     $content = flatsome_option('html_checkout_sidebar');
+     $content = get_theme_mod( 'html_checkout_sidebar', '' );
      if($content) {
       echo '<div class="html-checkout-sidebar pt-half">'.do_shortcode($content).'</div>';
      }
@@ -130,10 +130,10 @@ function flatsome_terms_and_conditions_checkbox_text( $link_style ) {
 		return;
 	}
 
-	$terms_link = $terms_page_id ? '<a href="' . esc_url( get_permalink( $terms_page_id ) ) . '" target="_blank" rel="noopener">' . esc_html__( 'terms and conditions', 'woocommerce' ) . '</a>' : esc_html__( 'terms and conditions', 'woocommerce' );
+	$terms_link = $terms_page_id ? '<a href="' . esc_url( get_permalink( $terms_page_id ) ) . '" target="_blank" rel="noopener">' . esc_html__( 'Terms and conditions', 'woocommerce' ) . '</a>' : esc_html__( 'Terms and conditions', 'woocommerce' );
 
 	if ( $link_style === 'lightbox' ) {
-		$terms_link = $terms_page_id ? '<a href="#terms-and-conditions-lightbox">' . esc_html__( 'terms and conditions', 'woocommerce' ) . '</a>' : esc_html__( 'terms and conditions', 'woocommerce' );
+		$terms_link = $terms_page_id ? '<a href="#terms-and-conditions-lightbox">' . esc_html__( 'Terms and conditions', 'woocommerce' ) . '</a>' : esc_html__( 'Terms and conditions', 'woocommerce' );
 	}
 
 	$text = str_replace( '[terms]', $terms_link, $text );

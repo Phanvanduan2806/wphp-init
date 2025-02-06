@@ -3,7 +3,7 @@
  * Posts single.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.16.0
+ * @flatsome-version 3.19.9
  */
 
 if ( have_posts() ) : ?>
@@ -15,8 +15,8 @@ if ( have_posts() ) : ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="article-inner <?php flatsome_blog_article_classes(); ?>">
 		<?php
-			if(flatsome_option('blog_post_style') == 'default' || flatsome_option('blog_post_style') == 'inline'){
-				get_template_part('template-parts/posts/partials/entry-header', flatsome_option('blog_posts_header_style') );
+			if ( get_theme_mod( 'blog_post_style', 'default' ) == 'default' || get_theme_mod( 'blog_post_style', 'default' ) == 'inline' ) {
+				get_template_part( 'template-parts/posts/partials/entry-header', get_theme_mod( 'blog_posts_header_style', 'normal' ) );
 			}
 		?>
 		<?php get_template_part( 'template-parts/posts/content', 'single' ); ?>

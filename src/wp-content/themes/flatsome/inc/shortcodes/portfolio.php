@@ -70,8 +70,8 @@ function flatsome_portfolio_shortcode($atts, $content = null, $tag = '' ) {
 
   if($height && !$image_height) $image_height = $height;
 
-  // Get Default Theme style
-  if(!$style) $style = flatsome_option('portfolio_style');
+	// Get Default Theme style.
+	if ( ! $style ) $style = get_theme_mod( 'portfolio_style', '' );
 
   // Fix old
   if($tag == 'featured_items_slider') $type = 'slider';

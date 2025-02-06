@@ -3,7 +3,7 @@
  * Product gallery wide.
  *
  * @package          Flatsome/WooCommerce/Templates
- * @flatsome-version 3.18.2
+ * @flatsome-version 3.19.9
  */
 
 ?>
@@ -42,17 +42,17 @@
 						<div class="is-well add-to-cart-wrapper <?php flatsome_product_summary_classes( false, false, true );?>">
 							<?php
 
-								if(!flatsome_option('catalog_mode')){
+								if ( ! get_theme_mod( 'catalog_mode', 0 ) ) {
 									woocommerce_template_single_price();
 									flatsome_before_add_to_cart_html();
 									woocommerce_template_single_add_to_cart();
 									flatsome_after_add_to_cart_html();
 								} else {
-									if(flatsome_option('catalog_mode_prices')){
+									if ( get_theme_mod( 'catalog_mode_prices', 0 ) ) {
 										woocommerce_template_single_price();
 									}
 									echo '<div class="catalog-product-text pb relative">';
-								    echo do_shortcode(flatsome_option('catalog_mode_product'));
+								    echo do_shortcode( get_theme_mod( 'catalog_mode_product', '' ) );
 								    echo '</div>';
 								}
 								woocommerce_template_single_meta();

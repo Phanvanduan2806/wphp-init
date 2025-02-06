@@ -3,7 +3,7 @@
  * Account sidebar element.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.19.0
+ * @flatsome-version 3.19.7
  */
 
 if ( ! is_woocommerce_activated() ) {
@@ -37,7 +37,12 @@ if ( ! is_woocommerce_activated() ) {
 		?>
 		<a <?php echo flatsome_html_atts( $link_atts ); ?>>
 			<span class="header-account-title">
-				<?php esc_html_e( 'Login', 'woocommerce' ); ?>
+				<?php
+				esc_html_e( 'Login', 'woocommerce' );
+				if ( get_theme_mod( 'header_account_register' ) ) :
+					echo ' / ' . esc_html__( 'Register', 'woocommerce' );
+				endif;
+				?>
 			</span>
 		</a>
 	<?php endif; ?>

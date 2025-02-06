@@ -10,10 +10,10 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see              https://docs.woocommerce.com/document/template-structure/
- * @package          WooCommerce/Templates
- * @version          3.0.0
- * @flatsome-version 3.16.0
+ * @see              https://woocommerce.com/document/template-structure/
+ * @package          WooCommerce\Templates
+ * @version          9.6.0
+ * @flatsome-version 3.19.9
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -33,7 +33,7 @@ if ( $upsells ) : ?>
 		}
 
 		if ( get_theme_mod('category_force_image_height' ) ) $repeater_classes[] = 'has-equal-box-heights';
-		if ( get_theme_mod('equalize_product_box' ) ) $repeater_classes[] = 'equalize-box';
+		if ( get_theme_mod('equalize_product_box' ) ) $repeater_classes[]        = 'equalize-box';
 
 		$repeater['type']         = $type;
 		$repeater['columns']      = get_theme_mod( 'related_products_pr_row', 4 );
@@ -63,7 +63,7 @@ if ( $upsells ) : ?>
 			<?php foreach ( $upsells as $upsell ) :
 				$post_object = get_post( $upsell->get_id() );
 
-				setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
+				setup_postdata( $GLOBALS['post'] = $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
 				wc_get_template_part( 'content', 'product' );
 			endforeach;
@@ -91,7 +91,7 @@ if ( $upsells ) : ?>
 					<?php
 					$post_object = get_post( $upsell->get_id() );
 
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
+					setup_postdata( $GLOBALS['post'] = $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
 					wc_get_template_part( 'content', 'product-small' );
 					?>

@@ -32,9 +32,20 @@ class Flatsome_Instagram {
 	 * Setup instance.
 	 */
 	private function __construct() {
-		add_action( 'admin_init', array( $this, 'schedule_event' ) );
-		add_action( 'switch_theme', array( $this, 'deschedule_event' ) );
-		add_action( $this->event, array( $this, 'refresh_access_tokens' ) );
+		add_action( 'after_setup_theme', array( $this, 'init' ) );
+	}
+
+	/**
+	 * Initialize.
+	 */
+	public function init() {
+		if ( ! empty( flatsome_facebook_accounts() ) ) {
+			add_action( 'admin_init', array( $this, 'schedule_event' ) );
+			add_action( 'switch_theme', array( $this, 'deschedule_event' ) );
+			add_action( $this->event, array( $this, 'refresh_access_tokens' ) );
+		}
+
+		add_action( 'of_save_options_after', array( $this, 'deschedule_event_if_no_accounts' ) );
 	}
 
 	/**
@@ -52,6 +63,15 @@ class Flatsome_Instagram {
 	public function deschedule_event() {
 		if ( wp_next_scheduled( $this->event ) ) {
 			wp_clear_scheduled_hook( $this->event );
+		}
+	}
+
+	/**
+	 * Deschedule the event if there are no accounts.
+	 */
+	public function deschedule_event_if_no_accounts() {
+		if ( empty( flatsome_facebook_accounts() ) ) {
+			$this->deschedule_event();
 		}
 	}
 

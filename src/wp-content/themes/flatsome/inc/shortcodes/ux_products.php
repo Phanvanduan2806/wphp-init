@@ -278,8 +278,8 @@ function ux_products($atts, $content = null, $tag = '' ) {
 					 	 wc_get_template_part( 'content', 'product' );
 					} else {
 
-			  // Ensure visibility.
-			  if ( empty( $product ) || false === wc_get_loop_product_visibility( $product->get_id() ) || ! $product->is_visible() ) {
+			  // Check if the product is a valid WooCommerce product and ensure its visibility before proceeding.
+			  if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 				  continue;
 			  }
 

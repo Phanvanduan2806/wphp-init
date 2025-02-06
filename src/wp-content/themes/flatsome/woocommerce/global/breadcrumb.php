@@ -7,7 +7,7 @@
  * @author           WooThemes
  * @package          WooCommerce/Templates
  * @version          2.3.0
- * @flatsome-version 3.16.0
+ * @flatsome-version 3.19.9
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -26,14 +26,14 @@ if ( !empty($breadcrumb) ) {
 
 		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
 			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
-		} else if(!is_product() && !flatsome_option('wc_category_page_title')) {
+		} elseif ( ! is_product() ) {
 			echo esc_html( $crumb[0] );
 		}
 
 		echo $after;
 
 		// Single product or Active title
-		if(is_product() || flatsome_option('wc_category_page_title')){
+		if ( is_product() ) {
 				$key = $key+1;
 				if ( sizeof( $breadcrumb ) > $key+1) {
 					echo ' <span class="divider">'.$delimiter.'</span> ';

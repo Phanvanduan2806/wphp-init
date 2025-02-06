@@ -10,10 +10,10 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see              https://docs.woocommerce.com/document/template-structure/
- * @package          WooCommerce/Templates
- * @version          3.5.1
- * @flatsome-version 3.16.0
+ * @see              https://woocommerce.com/document/template-structure/
+ * @package          WooCommerce\Templates
+ * @version          9.5.0
+ * @flatsome-version 3.19.8
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -30,7 +30,15 @@ $image_size     = get_theme_mod( 'product_layout' ) == 'gallery-wide' ? 'full' :
 
 
 if ( $attachment_ids && $product->get_image_id() ) {
-	foreach ( $attachment_ids as $attachment_id ) {
-		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', flatsome_wc_get_gallery_image_html( $attachment_id, $main_image = false, $image_size ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+	foreach ( $attachment_ids as $key => $attachment_id ) {
+		/**
+		 * Filter product image thumbnail HTML string.
+		 *
+		 * @since 1.6.4
+		 *
+		 * @param string $html          Product image thumbnail HTML string.
+		 * @param int    $attachment_id Attachment ID.
+		 */
+		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', flatsome_wc_get_gallery_image_html( $attachment_id, false, $image_size, $key ), $attachment_id ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }

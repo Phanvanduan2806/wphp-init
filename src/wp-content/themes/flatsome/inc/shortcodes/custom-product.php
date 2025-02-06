@@ -12,7 +12,7 @@ add_shortcode( 'ux_product_gallery', function ( $atts ) {
 	}
 
 	add_filter( 'theme_mod_product_image_style', function () use ( $style ) {
-		if ( in_array( $style, [ 'normal', 'vertical' ], true ) ) {
+		if ( ! in_array( $style, [ 'normal', 'vertical' ], true ) ) {
 			return 'normal';
 		}
 		return $style;
@@ -28,7 +28,7 @@ add_shortcode( 'ux_product_gallery', function ( $atts ) {
 	} );
 
 	add_filter( 'theme_mod_product_gallery_grid_layout', function () use ( $grid_layout ) {
-		if ( ! in_array( $grid_layout, [ '', '1-2', '3', '3-1-2' ], true ) ) {
+		if ( ! in_array( $grid_layout, [ '', '1-2', '2', '3-1-2' ], true ) ) {
 			return '';
 		}
 		return $grid_layout;
@@ -118,14 +118,14 @@ add_shortcode( 'ux_product_hook', function ( $atts ) {
 		return null;
 	}
 
-	$hooks = [
-		'woocommerce_before_single_product_summary',
-		'woocommerce_single_product_summary',
-		'woocommerce_after_single_product_summary',
-		'flatsome_custom_single_product_1',
-		'flatsome_custom_single_product_2',
-		'flatsome_custom_single_product_3',
-	];
+	$hooks = array_keys( apply_filters( 'flatsome_custom_product_single_product_hooks', [
+		'woocommerce_before_single_product_summary' => 'woocommerce_before_single_product_summary',
+		'woocommerce_single_product_summary'        => 'woocommerce_single_product_summary',
+		'woocommerce_after_single_product_summary'  => 'woocommerce_after_single_product_summary',
+		'flatsome_custom_single_product_1'          => 'flatsome_custom_single_product_1',
+		'flatsome_custom_single_product_2'          => 'flatsome_custom_single_product_2',
+		'flatsome_custom_single_product_3'          => 'flatsome_custom_single_product_3',
+	] ) );
 
 	ob_start();
 

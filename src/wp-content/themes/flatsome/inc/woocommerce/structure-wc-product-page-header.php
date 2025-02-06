@@ -14,8 +14,8 @@ add_action('flatsome_after_header','flatsome_product_header', 10);
 // Add Transparent Header To Cateogry if Set
 function flatsome_product_header_classes($classes){
 
-    // Add transparent header to product page if set.
-    if(is_product() && flatsome_option('product_header_transparent')){
+	// Add transparent header to product page if set.
+	if ( is_product() && get_theme_mod( 'product_header_transparent', 0 ) ) {
          $classes[] = 'transparent has-transparent nav-dark toggle-nav-dark';
     }
 

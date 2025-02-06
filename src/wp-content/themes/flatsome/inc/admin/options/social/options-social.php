@@ -309,7 +309,7 @@ function flatsome_refresh_social( WP_Customize_Manager $wp_customize ) {
 	    'settings' => array('follow_linkedin','follow_flickr','follow_email','follow_phone','follow_style','follow_facebook','follow_x','follow_twitter','follow_threads','follow_instagram','follow_tiktok','follow_rss','follow_vk','follow_youtube','follow_pinterest','follow_snapchat','follow_500px','follow_telegram','follow_twitch','follow_discord'),
 	    'container_inclusive' => true,
 	    'render_callback' => function() {
-	        return do_shortcode('[follow defaults="true" style="'.flatsome_option('follow_style').'"]');
+			return do_shortcode( '[follow style="' . get_theme_mod( 'follow_style', 'small' ) . '"]' );
 	    },
 	) );
 

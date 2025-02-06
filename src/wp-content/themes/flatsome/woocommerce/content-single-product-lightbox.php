@@ -3,12 +3,19 @@
  * Quick View.
  *
  * @package          Flatsome/WooCommerce/Templates
- * @flatsome-version 3.18.0
+ * @flatsome-version 3.19.7
  */
 
 defined( 'ABSPATH' ) || exit;
 
 global $post, $product;
+
+if ( post_password_required() ) {
+	echo '<div class="product-quick-view-container inner-padding">';
+	echo get_the_password_form(); // phpcs:ignore WordPress.Security.EscapeOutput
+	echo '</div>';
+	return;
+}
 
 do_action( 'flatsome_before_single_product_lightbox' );
 do_action_deprecated( 'wc_quick_view_before_single_product', array(), '3.18.0', 'flatsome_before_single_product_lightbox' );

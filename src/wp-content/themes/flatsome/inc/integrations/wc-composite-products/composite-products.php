@@ -12,7 +12,14 @@
  */
 function flatsome_wc_composite_products_integration() {
 	global $integrations_uri;
-	wp_enqueue_script( 'flatsome-composite-products', $integrations_uri . '/wc-composite-products/composite-products.js', array( 'jquery', 'flatsome-js', 'flatsome-lazy' ), Flatsome()->version(), true );
+
+	$deps = array( 'jquery', 'flatsome-js' );
+
+	if ( get_theme_mod( 'lazy_load_images' ) ) {
+		$deps[] = 'flatsome-lazy';
+	}
+
+	wp_enqueue_script( 'flatsome-composite-products', $integrations_uri . '/wc-composite-products/composite-products.js', $deps, flatsome()->version(), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'flatsome_wc_composite_products_integration' );

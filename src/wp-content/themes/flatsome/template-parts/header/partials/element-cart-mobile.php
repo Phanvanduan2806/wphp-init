@@ -3,19 +3,22 @@
  * Mobile cart element.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.19.0
+ * @flatsome-version 3.19.9
  */
 
 if ( is_woocommerce_activated() && flatsome_is_wc_cart_available() ) {
-  // Get Cart replacement for catalog_mode
-  if(flatsome_option('catalog_mode')) { get_template_part('template-parts/header/partials/element','cart-replace'); return;}
-  $cart_style = flatsome_option('header_cart_style');
-  $custom_cart_content = flatsome_option('html_cart_header');
-  $icon_style = flatsome_option('cart_icon_style');
-  $icon = flatsome_option('cart_icon');
-  $custom_cart_icon_id = get_theme_mod( 'custom_cart_icon' );
-  $custom_cart_icon = wp_get_attachment_image_src( $custom_cart_icon_id, 'large' );
-  $disable_mini_cart = apply_filters( 'flatsome_disable_mini_cart', is_cart() || is_checkout() );
+	// Get Cart replacement for catalog_mode.
+	if ( get_theme_mod( 'catalog_mode', 0 ) ) {
+		get_template_part( 'template-parts/header/partials/element', 'cart-replace' );
+		return;
+	}
+	$cart_style          = get_theme_mod( 'header_cart_style', 'dropdown' );
+	$custom_cart_content = get_theme_mod( 'html_cart_header', '' );
+	$icon_style          = get_theme_mod( 'cart_icon_style', '' );
+	$icon                = get_theme_mod( 'cart_icon', 'basket' );
+	$custom_cart_icon_id = get_theme_mod( 'custom_cart_icon' );
+	$custom_cart_icon    = wp_get_attachment_image_src( $custom_cart_icon_id, 'large' );
+	$disable_mini_cart   = apply_filters( 'flatsome_disable_mini_cart', is_cart() || is_checkout() );
 
   if ( $disable_mini_cart ) {
     $cart_style = 'link';

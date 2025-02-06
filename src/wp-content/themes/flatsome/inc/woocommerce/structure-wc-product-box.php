@@ -93,7 +93,7 @@ if ( ! function_exists( 'flatsome_woocommerce_shop_loop_category' ) ) {
 	 * Add and/or Remove Categories
 	 */
 	function flatsome_woocommerce_shop_loop_category() {
-		if ( ! flatsome_option( 'product_box_category' ) ) {
+		if ( ! get_theme_mod( 'product_box_category', 1 ) ) {
 			return;
 		} ?>
 		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
@@ -119,12 +119,12 @@ if ( ! function_exists( 'flatsome_woocommerce_shop_loop_ratings' ) ) {
 	 */
 	function flatsome_woocommerce_shop_loop_ratings() {
 		// Switch ratings position when grid 3 is chosen.
-		if ( 'grid3' === flatsome_option( 'grid_style' ) && ! get_theme_mod( 'disable_reviews' ) ) {
+		if ( 'grid3' === get_theme_mod( 'grid_style', 'grid1' ) && ! get_theme_mod( 'disable_reviews' ) ) {
 			remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 			add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_rating' );
 		}
 		// Remove ratings.
-		if ( flatsome_option( 'product_box_rating' ) ) {
+		if ( get_theme_mod( 'product_box_rating', 1 ) ) {
 			return;
 		}
 		remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
@@ -240,7 +240,7 @@ if ( ! function_exists( 'flatsome_woocommerce_shop_loop_excerpt' ) ) {
 	 * Add Product Short description
 	 */
 	function flatsome_woocommerce_shop_loop_excerpt() {
-		if ( ! flatsome_option( 'short_description_in_grid' ) ) {
+		if ( ! get_theme_mod( 'short_description_in_grid', 0 ) ) {
 			return;
 		}
 		?>

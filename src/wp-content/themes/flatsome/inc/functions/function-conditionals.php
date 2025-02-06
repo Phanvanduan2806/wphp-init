@@ -127,8 +127,8 @@ function flatsome_is_shop_archive() {
 	$queried_object               = get_queried_object();
 	$taxonomy                     = ( $queried_object && property_exists( $queried_object, 'taxonomy' ) ) ? $queried_object->taxonomy : false;
 	$additional_taxonomy_archives = [
+		'product_brand', // Included in WooCommerce core from 9.4
 		'berocket_brand',
-		'product_brand',
 		'product_brands',
 		'pwb-brand',
 		'yith_product_brand',

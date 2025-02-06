@@ -369,7 +369,7 @@ function flatsome_refresh_footer_partials( WP_Customize_Manager $wp_customize ) 
 		'selector'        => '.copyright-footer',
 		'settings'        => array( 'footer_left_text' ),
 		'render_callback' => function () {
-			return do_shortcode( flatsome_option( 'footer_left_text' ) );
+			return do_shortcode( get_theme_mod( 'footer_left_text', 'Copyright [ux_current_year] &copy; <strong>Flatsome Theme</strong>' ) );
 		},
 	) );
 
@@ -377,7 +377,7 @@ function flatsome_refresh_footer_partials( WP_Customize_Manager $wp_customize ) 
 		'selector'        => '.footer-secondary .footer-text',
 		'settings'        => array( 'footer_right_text' ),
 		'render_callback' => function () {
-			return do_shortcode( flatsome_option( 'footer_right_text' ) );
+			return do_shortcode( get_theme_mod( 'footer_right_text', '' ) );
 		},
 	) );
 

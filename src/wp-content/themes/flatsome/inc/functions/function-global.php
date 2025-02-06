@@ -61,18 +61,6 @@ function flatsome_enqueue_asset( $handle, $entrypoint, $dependencies = array() )
 	wp_enqueue_script( $handle );
 }
 
-/**
- * Get Flatsome option
- *
- * @deprecated in favor of get_theme_mod()
- *
- * @return string
- */
-function flatsome_option($option) {
-	// Get options
-	return get_theme_mod( $option, flatsome_defaults($option) );
-}
-
 if(!function_exists('flatsome_dummy_image')) {
   function flatsome_dummy_image() {
     return get_template_directory_uri().'/assets/img/missing.jpg';
@@ -524,7 +512,44 @@ function flatsome_get_payment_icons_list() {
 		'visa'            => __( 'Visa', 'flatsome-admin' ),
 		'visa1'           => __( 'Visa 2', 'flatsome-admin' ),
 		'visaelectron'    => __( 'Visa Electron', 'flatsome-admin' ),
+		'wero'            => __( 'Wero', 'flatsome-admin' ),
 		'westernunion'    => __( 'Western Union', 'flatsome-admin' ),
 		'wirecard'        => __( 'Wirecard', 'flatsome-admin' ),
 	) );
+}
+
+/**
+ * Get an HTML img element representing an image attachment
+ *
+ * @uses wp_get_attachment_image()
+ *
+ * @param int          $attachment_id Image attachment ID.
+ * @param string|int[] $size          Optional. Image size. Accepts any registered image size name, or an array
+ *                                    of width and height values in pixels (in that order). Default 'thumbnail'.
+ * @param bool         $icon          Optional. Whether the image should be treated as an icon. Default false.
+ * @param string|array $attr {
+ *     Optional. Attributes for the image markup.
+ *
+ *     @type string       $src      Image attachment URL.
+ *     @type string       $class    CSS class name or space-separated list of classes.
+ *                                  Default `attachment-$size_class size-$size_class`,
+ *                                  where `$size_class` is the image size being requested.
+ *     @type string       $alt      Image description for the alt attribute.
+ *     @type string       $srcset   The 'srcset' attribute value.
+ *     @type string       $sizes    The 'sizes' attribute value.
+ *     @type string|false $loading  The 'loading' attribute value. Passing a value of false
+ *                                  will result in the attribute being omitted for the image.
+ *                                  Defaults to 'lazy', depending on wp_lazy_loading_enabled().
+ *     @type string       $decoding The 'decoding' attribute value. Possible values are
+ *                                  'async' (default), 'sync', or 'auto'. Passing false or an empty
+ *                                  string will result in the attribute being omitted.
+ * }
+ * @return string HTML img element or empty string on failure.
+ */
+function flatsome_get_attachment_image_no_srcset( $attachment_id, $size = 'thumbnail', $icon = false, $attr = '' ) {
+	add_filter( 'wp_calculate_image_srcset_meta', '__return_null' );
+	$html = wp_get_attachment_image( $attachment_id, $size, $icon, $attr );
+	remove_filter( 'wp_calculate_image_srcset_meta', '__return_null' );
+
+	return $html;
 }

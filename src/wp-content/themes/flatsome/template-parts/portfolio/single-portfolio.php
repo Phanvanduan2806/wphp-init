@@ -3,10 +3,10 @@
  * Portfolio single.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.16.0
+ * @flatsome-version 3.19.9
  */
 
-get_template_part('template-parts/portfolio/portfolio-title', flatsome_option('portfolio_title'));
+get_template_part( 'template-parts/portfolio/portfolio-title', get_theme_mod( 'portfolio_title', '' ) );
 ?>
 <div class="portfolio-top">
 	<div class="page-wrapper row">

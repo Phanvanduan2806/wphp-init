@@ -300,9 +300,9 @@ while ( $recentPosts->have_posts() ) : $recentPosts->the_post();
 					?>
 					</p>
 					<?php } ?>
-					<h3 class="post-title is-<?php echo esc_attr( $title_size ); ?> <?php echo esc_attr( $title_style );?>">
+					<h5 class="post-title is-<?php echo esc_attr( $title_size ); ?> <?php echo esc_attr( $title_style );?>">
 						<a href="<?php the_permalink() ?>" class="plain"><?php the_title(); ?></a>
-					</h3>
+					</h5>
 					<?php if((!has_post_thumbnail() && $show_date !== 'false') || $show_date == 'text') {?><div class="post-meta is-small op-8"><?php echo get_the_date(); ?></div><?php } ?>
 					<div class="is-divider"></div>
 					<?php if($show_excerpt !== 'false') { ?>

@@ -186,7 +186,7 @@ class Featured_Item_Post_Type {
 
 		register_taxonomy( 'featured_item_category', array( 'featured_item' ), $args );
 
-		if ( $items_link = flatsome_option( 'featured_items_page' ) ) {
+		if ( $items_link = get_theme_mod( 'featured_items_page' ) ) {
 			add_permastruct( 'featured_item_category', $items_link . '/%featured_item_category%', false );
 			add_permastruct( 'featured_item', $items_link . '/%featured_item_category%/%featured_item%', false );
 

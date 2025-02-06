@@ -3,13 +3,13 @@
  * The template for displaying all pages.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.16.0
+ * @flatsome-version 3.19.9
  */
 
-if(flatsome_option('pages_template') != 'default') {
+if ( get_theme_mod( 'pages_template', 'default' ) != 'default' ) {
 
 	// Get default template from theme options.
-	get_template_part('page', flatsome_option('pages_template'));
+	get_template_part( 'page', get_theme_mod( 'pages_template', 'default' ) );
 	return;
 
 } else {

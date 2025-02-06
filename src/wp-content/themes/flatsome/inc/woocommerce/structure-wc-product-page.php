@@ -201,6 +201,26 @@ function flatsome_product_tabs_classes(){
     echo implode(' ', $classes);
 }
 
+/**
+ * Displays the product brand(s).
+ */
+function flatsome_product_brands() {
+	if ( ! get_theme_mod( 'product_brands' ) ) {
+		return;
+	}
+
+	if ( get_option( 'wc_feature_woocommerce_brands_enabled' ) !== 'yes' ) {
+		return;
+	}
+
+	echo '<div class="ux-product-brands">';
+	echo flatsome_apply_shortcode( 'product_brand', array(
+		'class' => '',
+	) );
+	echo '</div>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'flatsome_product_brands', 1 );
 
 // Add Custom HTML Blocks
 function flatsome_before_add_to_cart_html(){
@@ -250,11 +270,12 @@ function flatsome_sticky_add_to_cart_template() {
 	global $product;
 
 	if (
-		! is_product()
-		|| ! $product
+		! get_theme_mod( 'product_sticky_cart', 0 )
+		|| ! is_product()
+		|| ! is_a( $product, 'WC_Product' )
 		|| ! $product->is_purchasable()
-		|| ! get_theme_mod( 'product_sticky_cart', 0 )
-		|| ! apply_filters( 'flatsome_sticky_add_to_cart_enabled', true, $product ) ) {
+		|| ! apply_filters( 'flatsome_sticky_add_to_cart_enabled', true, $product )
+	) {
 		return;
 	}
 
@@ -306,9 +327,6 @@ add_action( 'wp_footer', 'flatsome_sticky_add_to_cart_template' );
  * @return array                The modified HTML attributes.
  */
 function flatsome_woocommerce_gallery_image_html_attachment_image_params( $atts, $attachment_id, $image_size, $main_image ) {
-	// Remove title attribute on product gallery images, preventing native tooltip.
-	unset( $atts['title'] );
-
 	$classes = ! empty( $atts['class'] ) ? explode( ' ', $atts['class'] ) : array();
 
 	// Skip lazy load on main product gallery image, attribute fetchpriority="high" may not always be present.

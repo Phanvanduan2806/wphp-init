@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-14T17:03:33+00:00\n"
-"PO-Revision-Date: 2024-06-14 17:05\n"
+"POT-Creation-Date: 2024-12-16T13:56:13+00:00\n"
+"PO-Revision-Date: 2024-12-16 14:00\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: flatsome\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -293,29 +293,29 @@ msgstr "Αφαίρεση"
 
 #: inc/admin/classes/class-features.php:30
 msgid "Features"
-msgstr ""
+msgstr "Δυνατότητες"
 
 #: inc/admin/classes/class-features.php:37
 msgid "Experimental features"
-msgstr ""
+msgstr "Πειραματικές δυνατότητες"
 
 #: inc/admin/classes/class-features.php:81
 msgid "There are currently no experimental features in development."
-msgstr ""
+msgstr "Προς το παρόν δεν υπάρχουν πειραματικές δυνατότητες προς ανάπτυξη."
 
 #: inc/admin/classes/class-features.php:83
 msgid "Features that are testable while they're in development. These features are likely to change, so avoid using them in production."
-msgstr ""
+msgstr "Δυνατότητες που ελέγχονται ενώ βρίσκονται σε ανάπτυξη. Αυτές οι δυνατότητες είναι πιθανό να αλλάξουν, οπότε αποφύγετε τη χρήση τους στην παραγωγή."
 
 #. translators: %s: PHP version.
 #: inc/admin/classes/class-features.php:132
 msgid "This feature requires PHP version %s or higher."
-msgstr ""
+msgstr "Αυτή η δυνατότητα απαιτεί έκδοση PHP %s ή νεότερη έκδοση."
 
 #. translators: %s: WordPress version.
 #: inc/admin/classes/class-features.php:136
 msgid "This feature requires WordPress version %s or higher."
-msgstr ""
+msgstr "Αυτή η δυνατότητα απαιτεί WordPress έκδοση %s ή νεότερη έκδοση."
 
 #: inc/admin/classes/class-status.php:559
 #: inc/admin/classes/class-status.php:587
@@ -809,7 +809,7 @@ msgstr ""
 
 #: inc/admin/options/shop/options-shop-cart-checkout.php:73
 msgid "Show shipping estimate destination"
-msgstr ""
+msgstr "Εμφάνιση εκτίμησης αποστολής για προορισμό"
 
 #: inc/admin/options/shop/options-shop-category.php:261
 msgid "Show result count"
@@ -820,7 +820,7 @@ msgid "Show catalog ordering"
 msgstr ""
 
 #: inc/admin/options/shop/options-shop-category.php:766
-#: inc/admin/options/shop/options-shop-product-page.php:475
+#: inc/admin/options/shop/options-shop-product-page.php:488
 msgid "Color :selected"
 msgstr "Χρώμα :επιλεγμένο"
 
@@ -830,27 +830,27 @@ msgstr "Χρώμα :επιλεγμένο"
 msgid "Custom product layout"
 msgstr ""
 
-#: inc/admin/options/shop/options-shop-product-page.php:436
+#: inc/admin/options/shop/options-shop-product-page.php:449
 msgid "Layout"
 msgstr ""
 
-#: inc/admin/options/shop/options-shop-product-page.php:448
+#: inc/admin/options/shop/options-shop-product-page.php:461
 msgid "Tooltip"
 msgstr ""
 
-#: inc/admin/options/shop/options-shop-product-page.php:449
+#: inc/admin/options/shop/options-shop-product-page.php:462
 msgid "Show a tooltip with the term or term description."
 msgstr ""
 
-#: inc/admin/options/shop/options-shop-product-page.php:457
+#: inc/admin/options/shop/options-shop-product-page.php:470
 msgid "Inactive out of stock"
 msgstr "Ανενεργό χωρίς απόθεμα"
 
-#: inc/admin/options/shop/options-shop-product-page.php:458
+#: inc/admin/options/shop/options-shop-product-page.php:471
 msgid "Show out of stock items as inactive."
 msgstr "Εμφάνιση στοιχείων εκτός αποθέματος ως ανενεργά."
 
-#: inc/admin/options/shop/options-shop-product-page.php:466
+#: inc/admin/options/shop/options-shop-product-page.php:479
 msgid "Disable deselection"
 msgstr "Απενεργοποίηση αποεπιλογής"
 
@@ -942,7 +942,7 @@ msgstr ""
 #: inc/classes/class-flatsome-relay.php:241
 #: inc/classes/class-flatsome-relay.php:289
 #: inc/structure/structure-posts.php:303
-#: woocommerce/loop/pagination.php:46
+#: woocommerce/loop/pagination.php:58
 #: woocommerce/single-product-reviews.php:67
 msgid "Previous"
 msgstr "Προηγούμενο"
@@ -950,7 +950,7 @@ msgstr "Προηγούμενο"
 #: inc/classes/class-flatsome-relay.php:246
 #: inc/classes/class-flatsome-relay.php:288
 #: inc/structure/structure-posts.php:302
-#: woocommerce/loop/pagination.php:45
+#: woocommerce/loop/pagination.php:57
 #: woocommerce/single-product-reviews.php:66
 msgid "Next"
 msgstr "Επόμενο"
@@ -1230,13 +1230,13 @@ msgstr ""
 msgid "Flatsome was unable to receive the latest update"
 msgstr ""
 
-#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:61
-#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:82
-#: template-parts/header/partials/element-wishlist-mobile.php:20
+#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:73
+#: inc/integrations/wc-yith-wishlist/yith-wishlist.php:96
 #: template-parts/header/partials/element-wishlist-mobile.php:21
-#: template-parts/header/partials/element-wishlist.php:18
-#: template-parts/header/partials/element-wishlist.php:23
+#: template-parts/header/partials/element-wishlist-mobile.php:22
+#: template-parts/header/partials/element-wishlist.php:19
 #: template-parts/header/partials/element-wishlist.php:24
+#: template-parts/header/partials/element-wishlist.php:25
 msgid "Wishlist"
 msgstr ""
 
@@ -1430,7 +1430,7 @@ msgstr ""
 #: inc/structure/structure-portfolio.php:50
 msgctxt "breadcrumb"
 msgid "Home"
-msgstr ""
+msgstr "Αρχική"
 
 #: inc/structure/structure-posts.php:139
 msgid "<span class=\"icon-angle-left\"></span> Older posts"
@@ -1533,7 +1533,7 @@ msgstr ""
 #: inc/woocommerce/class-mini-cart.php:168
 msgctxt "mini cart add to cart button label"
 msgid "Add"
-msgstr ""
+msgstr "Προσθήκη"
 
 #. translators: %s: The threshold
 #: inc/woocommerce/class-shipping.php:160
@@ -1568,7 +1568,7 @@ msgstr ""
 
 #: inc/woocommerce/structure-wc-checkout.php:166
 msgid "I have read and agree"
-msgstr ""
+msgstr "Έχω διαβάσει και συμφωνώ"
 
 #: inc/woocommerce/structure-wc-global.php:94
 msgid "Shop Sidebar"
@@ -1639,7 +1639,7 @@ msgstr ""
 msgid "Zoom"
 msgstr ""
 
-#: inc/woocommerce/structure-wc-product-page.php:286
+#: inc/woocommerce/structure-wc-product-page.php:307
 msgid "Select options"
 msgstr "Επιλέξτε ιδιότητες"
 
@@ -1665,7 +1665,7 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "WooCommerce - Cart"
-msgstr ""
+msgstr "Καλάθι"
 
 #. Template Name of the theme
 msgid "WooCommerce - Checkout"
@@ -1685,7 +1685,7 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "WooCommerce - My Account"
-msgstr ""
+msgstr "Ο Λογαριασμός μου"
 
 #. Template Name of the theme
 msgid "Page - Right Sidebar"

@@ -67,6 +67,7 @@ class Swatches_Frontend {
 		// Handle cache.
 		add_action( 'save_post', array( $this, 'cache_clear_save_post' ) );
 		add_action( 'woocommerce_before_product_object_save', array( $this, 'cache_clear_product_object_save' ) );
+		add_action( 'woocommerce_order_status_cancelled', array( swatches(), 'cache_clear' ) );
 		add_filter( 'pre_set_theme_mod_swatches', array( swatches(), 'cache_clear_on_option' ), 10, 2 );
 		add_filter( 'pre_set_theme_mod_swatches_box_attribute', array( swatches(), 'cache_clear_on_option' ), 10, 2 );
 		add_filter( 'pre_update_option_woocommerce_thumbnail_image_width', array( swatches(), 'cache_clear_on_option' ), 10, 2 );
@@ -213,7 +214,7 @@ class Swatches_Frontend {
 	 */
 	public function swatch_html( $html, $term, $type, $args ) {
 		$selected = sanitize_title( $args['selected'] ) == $term->slug ? 'selected' : '';
-		$name     = esc_html( apply_filters( 'woocommerce_variation_option_name', $term->name ) );
+		$name     = esc_html( apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $args['attribute'], $args['product'] ) );
 		$img_size = apply_filters( 'flatsome_swatch_image_size', 'woocommerce_gallery_thumbnail', $term );
 		$classes  = array( 'ux-swatch' );
 		$thumb    = '';
@@ -429,7 +430,7 @@ class Swatches_Frontend {
 			$swatch_classes    = array( 'ux-swatch' );
 			$color_classes     = array( 'ux-swatch__color' );
 			$term              = get_term_by( 'slug', $key, $attribute_name );
-			$name              = esc_html( apply_filters( 'woocommerce_variation_option_name', $term->name ) );
+			$name              = esc_html( apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $attribute_name, $product ) );
 			$img_size          = apply_filters( 'flatsome_swatch_image_size', 'woocommerce_gallery_thumbnail', $term );
 			$data              = array();
 			$type_tmp          = $attribute->type;

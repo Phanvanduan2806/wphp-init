@@ -1,3 +1,85 @@
+--- 3.19.9 ---
+NEW: WooCommerce 9.6 compatibility.
+
+ENHANCEMENT: Various CSS improvements.
+
+FIXED: h4 tag size on mobile devices.
+FIXED: WooCommerce 'Terms and conditions' string.
+
+CHANGED: Deprecated flatsome_option() and flatsome_defaults() functions.
+
+UPDATED: Google Fonts list.
+
+--- 3.19.8 ---
+NEW: WooCommerce 9.5 compatibility.
+NEW: Added Wero payment icon.
+
+ENHANCEMENT: Added a validation check to ensure the JavaScript-inserted toggle button is not duplicated.
+ENHANCEMENT: Swatch list cache is now cleared when an order is canceled.
+ENHANCEMENT: Updated Mastercard payment icon.
+ENHANCEMENT: Various CSS improvements.
+
+FIXED: Resolved a $orderedby variable warning when using WooCommerce versions older than 9.4.
+
+UPDATED: Language files.
+
+--- 3.19.7 ---
+NEW: WordPress 6.7 compatibility.
+NEW: WooCommerce 9.4 compatibility.
+NEW: Option to show product brand on single product page (WooCommerce Core).
+
+ENHANCEMENT: Show register label in the sidebar account element if enabled.
+ENHANCEMENT: WPML translation with native editor compatibility.
+ENHANCEMENT: YITH Wishlist v4 improvements.
+ENHANCEMENT: Various CSS improvements.
+
+FIXED: Added additional parameters to the woocommerce_variation_option_name filter.
+FIXED: Composite products integration did not load with lazy load images disabled.
+FIXED: Header Contact element Lighthouse Link not crawlable entry.
+FIXED: Support for private and hidden products in the quick view AJAX request.
+
+UPDATED: Google Fonts list.
+UPDATED: Language files.
+
+Note: Product brands ships with WooCommerce 9.4 core and is not enabled by default in this version.
+
+--- 3.19.6 ---
+NEW: WooCommerce 9.3 compatibility.
+
+FIXED: Exit UX Builder redirected to post list in some cases.
+
+UPDATED: Language files.
+
+--- 3.19.5 ---
+NEW: WooCommerce 9.2 compatibility.
+
+ENHANCEMENT: Improved cleanup of cron events.
+ENHANCEMENT: Strengthen sticky add to cart $product global check.
+ENHANCEMENT: Scroll to product element if variations form is not found for sticky add to cart select options button.
+ENHANCEMENT: Various CSS improvements.
+
+FIXED: WP 6.6 Block editor 'Edit with UX Builder'.
+
+UPDATED: Google Fonts list.
+UPDATED: Language files.
+
+--- 3.19.4 ---
+NEW: WooCommerce 9.1 compatibility.
+
+ENHANCEMENT: Prevented cart coupon form from being hidden with WC Stripe Payment Gateway plugin.
+ENHANCEMENT: Various CSS improvements.
+
+FIXED: Custom product single product hooks did not apply.
+FIXED: Product zoom in RTL.
+
+Note: The cart coupon class name is changed from checkout_coupon to ux-cart-coupon for plugin compatibility.
+
+--- 3.19.3 ---
+FIXED: Custom product gallery: Vertical and 2-column style rendered default layout.
+FIXED: Background images displayed less sharply on mobile in some cases.
+
+Reverted: Heading text wrapping (balanced).
+
 --- 3.19.2 ---
 ENHANCEMENT: Support plain URL as bg attribute value for banner & section.
 

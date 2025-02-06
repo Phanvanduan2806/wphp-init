@@ -3,12 +3,12 @@
  * Logo element.
  *
  * @package          Flatsome\Templates
- * @flatsome-version 3.16.0
+ * @flatsome-version 3.19.9
  */
 
-$site_logo_id        = flatsome_option( 'site_logo' );
-$site_logo_sticky_id = flatsome_option( 'site_logo_sticky' );
-$site_logo_dark_id   = flatsome_option( 'site_logo_dark' );
+$site_logo_id        = get_theme_mod( 'site_logo', get_template_directory_uri() . '/assets/img/logo.png' );
+$site_logo_sticky_id = get_theme_mod( 'site_logo_sticky', '' );
+$site_logo_dark_id   = get_theme_mod( 'site_logo_dark', '' );
 $site_logo           = wp_get_attachment_image_src( $site_logo_id, 'large' );
 $site_logo_sticky    = wp_get_attachment_image_src( $site_logo_sticky_id, 'large' );
 $site_logo_dark      = wp_get_attachment_image_src( $site_logo_dark_id, 'large' );

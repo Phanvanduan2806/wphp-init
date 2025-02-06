@@ -481,46 +481,72 @@ if ( ! function_exists( 'flatsome_wc_get_gallery_image_html' ) ) {
 	 * @param int    $attachment_id Attachment ID.
 	 * @param bool   $main_image    Is this the main image or a thumbnail?.
 	 * @param string $size          Image size.
+	 * @param int    $image_index   The image index in the gallery.
 	 *
 	 * @return string
+	 * @see wc_get_gallery_image_html()
 	 */
-	function flatsome_wc_get_gallery_image_html( $attachment_id, $main_image = false, $size = 'woocommerce_single' ) {
+	function flatsome_wc_get_gallery_image_html( $attachment_id, $main_image = false, $size = 'woocommerce_single', $image_index = -1 ) {
+		global $product;
+
+		// $flexslider     = (bool) apply_filters( 'woocommerce_single_product_flexslider_enabled', get_theme_support( 'wc-product-gallery-slider' ) );
 		$gallery_thumbnail = wc_get_image_size( 'gallery_thumbnail' );
 		$thumbnail_size    = apply_filters( 'woocommerce_gallery_thumbnail_size', array( $gallery_thumbnail['width'], $gallery_thumbnail['height'] ) );
+		// $image_size     = apply_filters( 'woocommerce_gallery_image_size', $flexslider || $main_image ? 'woocommerce_single' : $thumbnail_size );
 		$image_size        = apply_filters( 'woocommerce_gallery_image_size', $size );
 		$full_size         = apply_filters( 'woocommerce_gallery_full_size', apply_filters( 'woocommerce_product_thumbnails_large_size', 'full' ) );
 		$thumbnail_src     = wp_get_attachment_image_src( $attachment_id, $thumbnail_size );
+		$thumbnail_srcset  = wp_get_attachment_image_srcset( $attachment_id, $thumbnail_size );
+		$thumbnail_sizes   = wp_get_attachment_image_sizes( $attachment_id, $thumbnail_size );
 		$full_src          = wp_get_attachment_image_src( $attachment_id, $full_size );
 		$alt_text          = trim( wp_strip_all_tags( get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ) ) );
 
+		if ( fl_woocommerce_version_check( '9.3.3' ) && function_exists( 'woocommerce_get_alt_from_product_title_and_position' ) && is_a( $product, 'WC_Product' ) ) {
+			$alt_text = empty( $alt_text ) ? woocommerce_get_alt_from_product_title_and_position( $product->get_title(), $main_image, $image_index ) : $alt_text;
+		}
+
 		if ( empty( $full_src ) ) {
 			return '';
+		}
+
+		/**
+		 * Filters the attributes for the image markup.
+		 *
+		 * @since 3.3.2
+		 *
+		 * @param array $image_attributes Attributes for the image markup.
+		 */
+		$image_params = apply_filters(
+			'woocommerce_gallery_image_html_attachment_image_params',
+			array(
+				'title'                   => _wp_specialchars( get_post_field( 'post_title', $attachment_id ), ENT_QUOTES, 'UTF-8', true ),
+				'data-caption'            => _wp_specialchars( get_post_field( 'post_excerpt', $attachment_id ), ENT_QUOTES, 'UTF-8', true ),
+				'data-src'                => esc_url( $full_src[0] ),
+				'data-large_image'        => esc_url( $full_src[0] ),
+				'data-large_image_width'  => esc_attr( $full_src[1] ),
+				'data-large_image_height' => esc_attr( $full_src[2] ),
+				'class'                   => esc_attr( $main_image ? 'wp-post-image' : '' ),
+				'alt'                     => esc_attr( $alt_text ),
+			),
+			$attachment_id,
+			$image_size,
+			$main_image
+		);
+
+		if ( isset( $image_params['title'] ) ) {
+			unset( $image_params['title'] );
 		}
 
 		$image = wp_get_attachment_image(
 			$attachment_id,
 			$image_size,
 			false,
-			apply_filters(
-				'woocommerce_gallery_image_html_attachment_image_params',
-				array(
-					'title'                   => _wp_specialchars( get_post_field( 'post_title', $attachment_id ), ENT_QUOTES, 'UTF-8', true ),
-					'data-caption'            => _wp_specialchars( get_post_field( 'post_excerpt', $attachment_id ), ENT_QUOTES, 'UTF-8', true ),
-					'data-src'                => esc_url( $full_src[0] ),
-					'data-large_image'        => esc_url( $full_src[0] ),
-					'data-large_image_width'  => esc_attr( $full_src[1] ),
-					'data-large_image_height' => esc_attr( $full_src[2] ),
-					'class'                   => esc_attr( $main_image ? 'wp-post-image' : '' ),
-				),
-				$attachment_id,
-				$image_size,
-				$main_image
-			)
+			$image_params
 		);
 
 		$image_wrapper_class = $main_image ? 'slide first' : 'slide';
 
-		return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" data-thumb-alt="' . esc_attr( $alt_text ) . '" class="woocommerce-product-gallery__image ' . $image_wrapper_class . '"><a href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
+		return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" data-thumb-alt="' . esc_attr( $alt_text ) . '" data-thumb-srcset="' . esc_attr( $thumbnail_srcset ) . '"  data-thumb-sizes="' . esc_attr( $thumbnail_sizes ) . '" class="woocommerce-product-gallery__image ' . $image_wrapper_class . '"><a href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
 	}
 }
 
