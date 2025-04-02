@@ -8,7 +8,7 @@ add_shortcode('scrolling_box', function ($atts, $content = null) {
 .scrolling-box {
     display: block;
     max-height: 840px;
-    padding: 1em;
+    padding: 14px 7px 14px 0;
     overflow-y: auto;
     text-align: left;
     background:#f3f3f3;
