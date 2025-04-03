@@ -558,3 +558,4 @@ exit(0);
 1743649482_2577:"Notice: 192.168.65.1; User authentication succeeded: code"
 1743649602_7575:"Warning: code, 192.168.65.1; User account edited; ID: 4; name: seo; old_name: seo; email: seo@domain.com; old_email: seo@domain.com; roles: administrator; old_roles: administrator"
 1743649650_7264:"Notice: 192.168.65.1; User authentication succeeded: seo"
+1743654350_9215:"Notice: 192.168.65.1; User authentication succeeded: code"
