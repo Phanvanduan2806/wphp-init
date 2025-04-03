@@ -554,3 +554,7 @@ exit(0);
 1732715521_068:"Error: code, 192.168.65.1; Reading settings changed: (multiple entries): blog_public: from '1' to '0'"
 1732715532_3472:"Warning: code, 192.168.65.1; Plugin activated: UpdraftPlus - Backup\/Restore (v2.24.4.26; updraftplus\/updraftplus.php)"
 1738845556_2281:"Notice: 172.26.0.1; User authentication succeeded: code"
+1743649476_4701:"Error: 192.168.65.1; User authentication failed: code"
+1743649482_2577:"Notice: 192.168.65.1; User authentication succeeded: code"
+1743649602_7575:"Warning: code, 192.168.65.1; User account edited; ID: 4; name: seo; old_name: seo; email: seo@domain.com; old_email: seo@domain.com; roles: administrator; old_roles: administrator"
+1743649650_7264:"Notice: 192.168.65.1; User authentication succeeded: seo"

@@ -13,6 +13,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<meta name="author" content="<?php echo esc_attr(do_shortcode('[users_with_posts]')); ?>">
+<meta name="publisher" content="<?php echo esc_attr(do_shortcode('[users_with_posts]')); ?>">
+<meta name="keywords" content="<?php echo esc_attr(get_post_meta(get_the_ID(), 'rank_math_focus_keyword', true)); ?>">
 
 	<?php wp_head(); ?>
 </head>

@@ -249,3 +249,6 @@ figcaption {
 .rank-math-breadcrumb a, .rank-math-breadcrumb span {
     font-weight: bold;
 }
+.searchform-wrapper{
+    z-index: 999;
+}
