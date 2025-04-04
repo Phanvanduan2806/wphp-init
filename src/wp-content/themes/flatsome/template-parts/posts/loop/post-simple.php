@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="box-text spacing-medium text-center">
-			<h5 class="post-title uppercase"><?php the_title(); ?></h5>
+			<h3 class="post-title uppercase"><?php the_title(); ?></h3>
 			<div class="is-divider small"></div>
 			<?php if ( $excerpt != 'false' ) { ?>
 				<p class="from_the_blog_excerpt small-font show-next">
