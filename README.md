@@ -1,7 +1,7 @@
 # Tạo token
 https://github.com/settings/tokens/new
 ```
-git clone https://TOKEN@github.com/webangiang/wp-init DOMAIN
+git clone https://TOKEN@github.com/phanvanduan2806/init-tt DOMAIN
 ```
 
 # Lấy data từ site wordpress
@@ -59,7 +59,7 @@ http://duan.wuaze.com
 PassFE: P@ssw0rd@@
 Link dashboard: https://domain/web_auth
 User: seo
-Pass: &nXJuz2HTd3j1ZHztihU3kPV
+Pass: n4xN40@kVie#!P^B^^vFkKy8
 ```
 
 # Security
