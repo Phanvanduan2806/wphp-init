@@ -1,7 +1,7 @@
 # Tạo token
 https://github.com/settings/tokens/new
 ```
-git clone https://TOKEN@github.com/phanvanduan2806/init-tt DOMAIN
+git clone https://TOKEN@github.com/webangiang/wp-init DOMAIN
 ```
 
 # Lấy data từ site wordpress
