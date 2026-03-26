@@ -30,22 +30,10 @@ $title = esc_html($title);
 $content = wp_kses_post($content);
 
 $result = <<<EOF
-[section padding="0px"]
 
-[row style="small"]
-
-[col span__sm="12" class="pb-0"]
-
-[ux_html]
-
+[section label="a-content" class="dp-content"]
 [c_breadcrumbs]
-[/ux_html]
-
-[/col]
-[/row]
-[/section]
-[section label="a-content" class="a-content"]
-[title text="$title" tag_name="h1" class="a-heading"]
+[title text="$title" tag_name="h1" class="dp-heading"]
 [row]
 
 [col span__sm="12"]

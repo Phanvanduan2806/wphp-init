@@ -1,0 +1,28 @@
+.mfp-bg {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* dp-heading */
+.dp-heading .section-title {
+    justify-content: center;
+}
+
+.dp-heading .section-title,
+.dp-heading-left .section-title {
+    border: unset !important;
+}
+
+.dp-heading b,
+.dp-heading-left b {
+    display: none !important;
+}
+
+.dp-heading span,
+.dp-heading-left span {
+    border: unset;
+    padding: unset;
+    margin: unset;
+}

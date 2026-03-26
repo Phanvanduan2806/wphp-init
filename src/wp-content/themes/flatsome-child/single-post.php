@@ -26,7 +26,7 @@ $title = esc_html($title);
 $content = wp_kses_post($content);
 
 $result = <<<EOF
-[section class="a-single" padding="0px"]
+[section class="dp-single" padding="0px"]
 [row]
 
 [col span="8" span__sm="12" span__md="12"]
@@ -34,15 +34,13 @@ $result = <<<EOF
 [c_breadcrumbs]
 [gap height="15px"]
 [/ux_html]
-[title text="$title" tag_name="h1" class="a-heading"]
+[title text="$title" tag_name="h1" class="dp-heading"]
 [ux_html]
 $content
 [/ux_html]
 [related_blog]
 [/col]
-
 [col span="4" span__sm="12" span__md="6"]
-[gap height="15px"]
 [block id="sidebar"]
 [/col]
 
