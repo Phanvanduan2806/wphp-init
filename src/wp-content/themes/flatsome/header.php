@@ -9,34 +9,34 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="<?php flatsome_html_classes(); ?>">
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<meta name="author" content="<?php echo esc_attr(do_shortcode('[users_with_posts]')); ?>">
-<meta name="publisher" content="<?php echo esc_attr(do_shortcode('[users_with_posts]')); ?>">
-<meta name="keywords" content="<?php echo esc_attr(get_post_meta(get_the_ID(), 'rank_math_focus_keyword', true)); ?>">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<meta name="keywords"
+		content="<?php echo esc_attr(get_post_meta(get_the_ID(), 'rank_math_focus_keyword', true)); ?>">
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-<?php do_action( 'flatsome_after_body_open' ); ?>
-<?php wp_body_open(); ?>
+	<?php do_action('flatsome_after_body_open'); ?>
+	<?php wp_body_open(); ?>
 
-<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'flatsome' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'flatsome'); ?></a>
 
-<div id="wrapper">
+	<div id="wrapper">
 
-	<?php do_action( 'flatsome_before_header' ); ?>
+		<?php do_action('flatsome_before_header'); ?>
 
-	<header id="header" class="header <?php flatsome_header_classes(); ?>">
-		<div class="header-wrapper">
-			<?php get_template_part( 'template-parts/header/header', 'wrapper' ); ?>
-		</div>
-	</header>
+		<header id="header" class="header <?php flatsome_header_classes(); ?>">
+			<div class="header-wrapper">
+				<?php get_template_part('template-parts/header/header', 'wrapper'); ?>
+			</div>
+		</header>
 
-	<?php do_action( 'flatsome_after_header' ); ?>
+		<?php do_action('flatsome_after_header'); ?>
 
-	<main id="main" class="<?php flatsome_main_classes(); ?>">
+		<main id="main" class="<?php flatsome_main_classes(); ?>">

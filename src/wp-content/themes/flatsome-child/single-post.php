@@ -26,22 +26,26 @@ $title = esc_html($title);
 $content = wp_kses_post($content);
 
 $result = <<<EOF
-[section class="dp-single" padding="0px"]
-[row]
-
-[col span="8" span__sm="12" span__md="12"]
-[ux_html]
-[c_breadcrumbs]
-[gap height="15px"]
-[/ux_html]
+[section class="dp-single pb-0" padding="60px"]
+[dp_breadcrumbs]
 [title text="$title" tag_name="h1" class="dp-heading"]
+[row]
+[col span="9" span__sm="12" span__md="12"]
 [ux_html]
 $content
 [/ux_html]
-[related_blog]
 [/col]
-[col span="4" span__sm="12" span__md="6"]
+[col span="3" span__sm="12" span__md="6" sticky="true"]
 [block id="sidebar"]
+[/col]
+
+[/row]
+[/section]
+[section padding="30px" class="pb-0"]
+[row]
+[col span="12" span__sm="12" span__md="12"]
+[related_blog]
+
 [/col]
 
 [/row]

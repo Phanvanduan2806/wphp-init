@@ -18,7 +18,7 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     restart: always
     ports:
-      - '4008:80'
+      - '4010:80'
     environment:
       PMA_HOST: db
       PMA_USER: root
@@ -35,7 +35,7 @@ services:
     volumes:
       - ./src/:/var/www/html
     ports:
-      - "3008:80"
+      - "3010:80"
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
