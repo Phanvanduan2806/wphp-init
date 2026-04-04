@@ -779,3 +779,4 @@ exit(0);
 1775330398_0902:"Warning: code, 192.168.65.1; Post moved to trash; ID: 549; name: ; status: publish"
 1775330398_0955:"Notice: code, 192.168.65.1; Customize_changeset status has been changed; details: ID: 549,Old status: publish,New status: trash,Title: "
 1775330398_099:"Notice: code, 192.168.65.1; Customize_changeset status has been changed; details: ID: 549,Old status: new,New status: publish,Title: "
+1775339984_3006:"Notice: code, 192.168.65.1; Revision status has been changed; details: ID: 550,Old status: new,New status: inherit,Title: Sidebar"
